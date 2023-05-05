@@ -1,23 +1,14 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import { RouterView } from 'vue-router'
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
+    <!-- I don't need to add anything here for this challenge -->
   </header>
-
-  <RouterView />
+  <main class="min-h-screen w-full bg-gray-50 dark:bg-gray-900">
+    <RouterView />
+  </main>
 </template>
 
 <style scoped>
